@@ -1,0 +1,40 @@
+[project]
+name = "linkedin-jobs-api-py"
+version = "0.1.0"
+description = "Unofficial LinkedIn Jobs scraper API for Python"
+authors = [
+  { name = "Anselme Wilfried R OUEDRAOGO", email = "wilfried.ouedraogo@itpartages.com" }
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+requires-python = ">=3.9"
+dependencies = [
+  "requests>=2.32.0",
+  "beautifulsoup4>=4.14.0",
+  "selectolax>=0.4.3"
+
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-cov",
+    "requests-mock",  # Pour mocker les réponses
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/ANSELME-TIC/linkedin-jobs-api-py"
+Documentation = "https://github.com/ANSELME-TIC/linkedin-jobs-api-py#readme"
+Repository = "https://github.com/ANSELME-TIC/linkedin-jobs-api-py"
+Issues = "https://github.com/ANSELME-TIC/linkedin-jobs-api-py/issues"
