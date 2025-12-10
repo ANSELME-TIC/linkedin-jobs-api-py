@@ -29,19 +29,19 @@ for job in jobs:
 
 ## 🔍 All available filters
 
-| Parameter | Possible values                                                                     | Example |
-|-----------|----------------------------------------------------------------------------------------|---------|
-| `keyword` | Free text                                                                            | `"data scientist"` |
-| `location` | City/Country                                                                               | `"Paris"`, `"Remote"` |
-| `dateSincePosted` | `"1hr"`,`"24hr"`,`"past week"`,`"past month"`                                          | `"past week"` |
-| `jobType` | `"full time"`, `"part time"`, `"contract"`, `"temporary"`, `"internship"`, `"volunteer"` | `"full time"` |
-| `remoteFilter` | `"remote"`, `"on site"`, `"hybrid"`                                                    | `"remote"` |
-| `salary` | `"40000"`, `"60000"`, `"100000"`, `"120000"`                                           | `"100000"` |
-| `experienceLevel` | `"internship"`,`"entry level"`,`"associate"`, `"senior"`, `"director"`,`"executive"`   | `"senior"` |
-| `limit` | `"1"`,`"3"`....`"10"`                                                                  | `"5"` |
-| `page` | `"0"`, `"1"`, `"2"`...`"999"` (10 jobs/page)                                           | `"1"` |
-| `has_verification` | `True`/`False`                                                                         | `True` |
-| `under_10_applicants` | `True`/`False`                                                                         | `True` |
+| Parameter | Possible values                                                                     | Example              |
+|-----------|----------------------------------------------------------------------------------------|----------------------|
+| `keyword` | Free text                                                                            | `"data scientist"`   |
+| `location` | City/Country                                                                               | `"Paris"`, `"Dakar"` |
+| `dateSincePosted` | `"1hr"`,`"24hr"`,`"past week"`,`"past month"`                                          | `"past week"`        |
+| `jobType` | `"full time"`, `"part time"`, `"contract"`, `"temporary"`, `"internship"`, `"volunteer"` | `"full time"`        |
+| `remoteFilter` | `"remote"`, `"on site"`, `"hybrid"`                                                    | `"remote"`           |
+| `salary` | `"40000"`, `"60000"`, `"100000"`, `"120000"`                                           | `"100000"`           |
+| `experienceLevel` | `"internship"`,`"entry level"`,`"associate"`, `"senior"`, `"director"`,`"executive"`   | `"senior"`           |
+| `limit` | `"1"`,`"3"`....`"10"`                                                                  | `"5"`                |
+| `page` | `"0"`, `"1"`, `"2"`...`"999"` (10 jobs/page)                                           | `"1"`                |
+| `has_verification` | `True`/`False`                                                                         | `True`               |
+| `under_10_applicants` | `True`/`False`                                                                         | `True`               |
 
 ## 💡 Complete examples
 
