@@ -17,7 +17,7 @@ pip install linkedin-jobs-api-py
 ```python
 from linkedin_jobs_api import query
 
-# Recherche basique
+# Basic search
 jobs = query(keyword="python developer", location="Paris", limit="10")
 
 for job in jobs:
