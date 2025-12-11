@@ -29,18 +29,18 @@ for job in jobs:
 
 ## 🔍 All available filters
 
-| Parameter | Possible values                                                                     | Example              |
-|-----------|----------------------------------------------------------------------------------------|----------------------|
-| `keyword` | Free text                                                                            | `"data scientist"`   |
-| `location` | City/Country                                                                               | `"Paris"`, `"Dakar"` |
-| `dateSincePosted` | `"1hr"`,`"24hr"`,`"past week"`,`"past month"`                                          | `"past week"`        |
-| `jobType` | `"full time"`, `"part time"`, `"contract"`, `"temporary"`, `"internship"`, `"volunteer"` | `"full time"`        |
-| `remoteFilter` | `"remote"`, `"on site"`, `"hybrid"`                                                    | `"remote"`           |
-| `salary` | `"40000"`, `"60000"`, `"100000"`, `"120000"`                                           | `"100000"`           |
-| `experienceLevel` | `"internship"`,`"entry level"`,`"associate"`, `"senior"`, `"director"`,`"executive"`   | `"senior"`           |
-| `limit` | `"1"`,`"3"`....`"10"`                                                                  | `"5"`                |
-| `page` | `"0"`, `"1"`, `"2"`...`"999"` (10 jobs/page)                                           | `"1"`                |
-| `has_verification` | `True`/`False`                                                                         | `True`               |
+| Parameter             | Possible values                                                                     | Example              |
+|-----------------------|----------------------------------------------------------------------------------------|----------------------|
+| `keyword`             | Free text                                                                            | `"data scientist"`   |
+| `location`            | City/Country                                                                               | `"Paris"`, `"Dakar"` |
+| `date_since_posted`   | `"1hr"`,`"24hr"`,`"past week"`,`"past month"`                                          | `"past week"`        |
+| `job_type`            | `"full time"`, `"part time"`, `"contract"`, `"temporary"`, `"internship"`, `"volunteer"` | `"full time"`        |
+| `remote_filter`       | `"remote"`, `"on site"`, `"hybrid"`                                                    | `"remote"`           |
+| `salary`              | `"40000"`, `"60000"`, `"100000"`, `"120000"`                                           | `"100000"`           |
+| `experience_level`    | `"internship"`,`"entry level"`,`"associate"`, `"senior"`, `"director"`,`"executive"`   | `"senior"`           |
+| `limit`               | `"1"`,`"3"`....`"10"`                                                                  | `"5"`                |
+| `page`                | `"0"`, `"1"`, `"2"`...`"999"` (10 jobs/page)                                           | `"1"`                |
+| `has_verification`    | `True`/`False`                                                                         | `True`               |
 | `under_10_applicants` | `True`/`False`                                                                         | `True`               |
 
 ## 💡 Complete examples
@@ -54,9 +54,9 @@ jobs = query(keyword="frontend", location="Lyon", limit="5")
 ```python
 jobs = query(
 keyword="backend developer",
-remoteFilter="remote",
-jobType="full time",
-dateSincePosted="past week",
+remote_filter="remote",
+job_type="full time",
+date_since_posted="past week",
 limit="10"
 )
 ```
@@ -66,7 +66,7 @@ limit="10"
 ```python
 jobs = query(
 keyword="software engineer",
-experienceLevel="senior",
+experience_level="senior",
 salary="100000",
 location="France",
 limit="8"
@@ -79,7 +79,7 @@ jobs = query(
 keyword="product manager",
 has_verification=True,
 under_10_applicants=True,
-sortBy="recent"
+sort_by="recent"
 )
 ```
 
